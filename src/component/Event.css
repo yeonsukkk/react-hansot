@@ -1,4 +1,60 @@
 /* Event.css */
+.eventWrap {
+  margin-top: 200px;
+}
+
+.eventWrap > h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 28px;
+  position: relative;
+}
+
+.eventWrap > h3:before, .eventWrap > h3:after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 2px;
+  background-color: #373737;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.eventWrap > h3:before {
+  left: 0;
+}
+
+.eventWrap > h3:after {
+  right: 0;
+}
+
+.eventItemWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .eventItemWrap figure {
   background-color: #fff;
+  width: 31.7%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.eventItemWrap figure > div {
+  overflow: hidden;
+}
+
+.eventItemWrap figure img {
+  width: 100%;
+  transition: all .3s;
+}
+
+.eventItemWrap figure:hover > div img {
+  transform: scale(1.05)
+}
+
+.eventItemWrap figcaption {
+  margin-top: 15px;
 }
