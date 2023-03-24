@@ -5,10 +5,6 @@ import Logo from '../assets/images/h1_logo.png'
 
 const Nav = () => {
     const location = useLocation()
-    function getLinkStyle({isActive}){
-        console.log(isActive)
-        
-    }
     
     return(
         <>
@@ -18,7 +14,7 @@ const Nav = () => {
                     <nav>
                         <h2 className="hide">메인메뉴</h2>
                         <ul className="menuList">
-                            <li><NavLink to="/menu"  style={getLinkStyle}>메뉴소개</NavLink></li>
+                            <li><NavLink to="/menu" className={({isActive}) => isActive && `active`}>메뉴소개</NavLink></li>
                             <li><NavLink to="/myMenu">나만의메뉴</NavLink></li>
                             <li><NavLink to="/hansotStore">가맹점찾기</NavLink></li>
                             <li><NavLink to="/news">새로운소식</NavLink></li>

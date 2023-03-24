@@ -49,6 +49,10 @@ header .menuList > li > a:hover:after {
     height: 8px;
 }
 
+header .menuList > li > a.active:after {
+    height: 8px;
+}
+
 header.main {
     position: absolute;
     top: 0;
