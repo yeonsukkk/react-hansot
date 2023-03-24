@@ -38,9 +38,6 @@ const MenuDetail = () => {
                                 <dl>
                                     <dt>{product.title}</dt>
                                     <dd>{product.text}</dd>
-                                    <dd>
-                                        <button type="button" onClick={e => removeAll()}><BsFillCartPlusFill />삭제</button>
-                                    </dd>
                                     <dd className="btnAddCart">
                                         <button type="button" onClick={() => addCart(product)}><BsFillCartPlusFill />담기</button>
                                     </dd>
