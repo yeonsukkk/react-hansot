@@ -1,0 +1,20 @@
+/* News.css */
+.newsWrap .newsItemWrap > a {
+  display: block;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+.newsWrap .newsItemWrap > a figure > div {
+  overflow: hidden
+}
+
+.newsWrap .newsItemWrap > a figure > div img {
+  transition: all .3s;
+}
+
+.newsWrap .newsItemWrap > a:hover figure > div img {
+  transform: scale(1.05);
+}
