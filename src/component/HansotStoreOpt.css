@@ -1,0 +1,8 @@
+/* HansotStoreOpt.css */
+.HansotStoreOptWrap select {
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 18px;
+}

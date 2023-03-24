@@ -1,0 +1,46 @@
+/* HansotStoreCnt */
+.HansotStoreWrap {
+  margin-top: 15px;
+}
+.HansotStoreWrap .map {
+  width: 100%;
+  min-height: 100px;
+  background-color: #fff;
+}
+
+.HansotStoreWrap .storeList {
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.HansotStoreWrap .storeList li {
+  padding: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999;
+}
+
+.HansotStoreWrap .storeList li:first-child {
+  border-top: 4px solid #373737;
+}
+
+.HansotStoreWrap .storeList li:last-child {
+  border-bottom: 0 none;
+}
+
+.HansotStoreWrap .storeList li dl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.HansotStoreWrap .storeList li dl dt:first-child {
+  width: 15%;
+}
+.HansotStoreWrap .storeList li dl dd:nth-child(2) {
+  width: 20%;
+}
+.HansotStoreWrap .storeList li dl dd:nth-child(3) {
+  width: 40%;
+}
