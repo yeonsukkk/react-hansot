@@ -6,7 +6,7 @@ import { BsFillCartPlusFill } from 'react-icons/bs';
 import ProductSubEx from '../component/ProductSubEx'
 import Event from '../component/Event'
 import { fetchAllProduct } from '../store'
-import { addCart, remove } from '../api/api'
+import { addCart, removeAll } from '../api/api'
 
 import './MenuDetail.css'
 
@@ -24,9 +24,7 @@ const MenuDetail = () => {
     let product = matchProduct(menuSlug)
 
     const navigate = useNavigate()
-    const prevPage = () => navigate(-1)
-    
-
+    const prevPage = () => navigate(-1) 
 
     return(
         <section className="menuDetailWrap subWrap">
@@ -41,10 +39,10 @@ const MenuDetail = () => {
                                     <dt>{product.title}</dt>
                                     <dd>{product.text}</dd>
                                     <dd>
-                                        <button type="button" onClick={e => remove()}><BsFillCartPlusFill />삭제</button>
+                                        <button type="button" onClick={e => removeAll()}><BsFillCartPlusFill />삭제</button>
                                     </dd>
                                     <dd className="btnAddCart">
-                                        <button type="button" onClick={e => addCart(e, productData.data, menuSlug)}><BsFillCartPlusFill />담기</button>
+                                        <button type="button" onClick={() => addCart(product)}><BsFillCartPlusFill />담기</button>
                                     </dd>
                                 </dl>
                                 
