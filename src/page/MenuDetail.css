@@ -1,0 +1,77 @@
+/* MenuDetail.css */
+.mainTitle span {
+  cursor: pointer;
+}
+
+.menuDetailWrap .cnt figure {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.menuDetailWrap .cnt figure > div {
+  width: 55%;
+}
+
+.menuDetailWrap .cnt figure > div img {
+  width: 100%;
+}
+
+.menuDetailWrap .cnt figure figcaption {
+  width: 45%;
+  box-sizing: border-box;
+  padding: 7% 5%;
+  position: relative;
+}
+
+.menuDetailWrap .cnt figure dt {
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 20px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.menuDetailWrap .cnt figure dt:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #222;
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.menuDetailWrap .cnt figure dd {
+  font-size: 18px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.menuDetailWrap .cnt figure .btnAddCart {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  width: 90%;
+}
+
+.menuDetailWrap .cnt figure .btnAddCart button {
+  display: block;
+  width: 100%;
+  background-color: orange;
+  color: #fff;
+  line-height: 3;
+  font-size: 18px;
+  transition: all .15s linear; 
+}
+
+.menuDetailWrap .cnt figure .btnAddCart button svg {
+  font-size: 20px;
+  padding-right: 5px;
+  vertical-align: -.1em;
+}
+
+.menuDetailWrap .cnt figure .btnAddCart button:hover {
+  opacity: .8;
+}

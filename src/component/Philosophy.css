@@ -1,0 +1,57 @@
+/* Philosophy.css */
+.Philosophy {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Philosophy .bg {
+    height: 100%;
+    background: url('../assets/images/bg_philosophy.jpg') no-repeat top left;
+    background-size: 100%;
+    transition: all 2s;
+}
+
+.Philosophy:hover .bg {
+    transform: scale(1.03) rotate(.002deg);
+}
+
+.Philosophy .comWebWidth {
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Philosophy .cnt {
+    width: 370px;
+    height: 100%;
+    background-color: rgba(55,55,55,.9);
+    box-sizing: border-box;
+    padding: 120px 25px 60px 25px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.Philosophy .cnt h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.Philosophy .cnt h3:after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: -.5em;
+    left: 0;
+}
+
+.Philosophy .cnt p {
+    text-align: justify;
+    line-height: 1.5;
+}

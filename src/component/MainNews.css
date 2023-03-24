@@ -1,0 +1,31 @@
+/* MainNews.css */
+.mainNewsWrap {
+    padding: 100px 0;
+}
+
+.mainNewsWrap > h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+    position: relative;
+}
+
+
+.mainNewsWrap > h3:before, .mainNewsWrap > h3:after {
+    content:"";
+    display: block;
+    width: 45%;
+    height: 2px; 
+    background-color: #373737;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mainNewsWrap > h3:before {
+    left: 0;
+}
+
+.mainNewsWrap > h3:after {
+    right: 0;
+}

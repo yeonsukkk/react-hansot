@@ -1,0 +1,37 @@
+/* MenuOption.css */
+.menuOptionWrap {
+    width: 250px;
+    padding: 20px 0; 
+    border-top: 3px solid #222;
+    border-bottom: 3px solid #222;
+}
+.menuOptionWrap .opt {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.menuOptionWrap .opt label {
+    cursor: pointer;
+}
+
+.menuOptionWrap .opt h5 {
+    font-size: 20px;
+    word-break: keep-all;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.menuOptionWrap .opt1 > ul {
+    margin-bottom: 10px;
+}
+
+.menuOptionWrap .opt1 > ul > li > span {
+    display: inline-block;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.menuOptionWrap .opt ul li {
+    line-height: 1.3;
+}

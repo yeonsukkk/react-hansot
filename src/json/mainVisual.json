@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "imgUrl": "./img/mainVisual/mainVisual1.jpg",
+        "ex": "음식사진1"
+    },
+    {
+        "id": 2,
+        "imgUrl": "./img/mainVisual/mainVisual2.jpg",
+        "ex": "음식사진1"
+    },
+    {
+        "id": 3,
+        "imgUrl": "./img/mainVisual/mainVisual3.jpg",
+        "ex": "음식사진1"
+    }
+]

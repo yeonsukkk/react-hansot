@@ -1,0 +1,75 @@
+/* Footer.css */
+footer {
+    padding: 60px 0;
+    background-color: #373737;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .sitemap {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+footer .sitemap li {
+    margin-right: 10px;
+}
+
+footer .info {
+    margin-bottom: 40px;
+    color: rgba(255,255,255,.6);
+}
+
+footer .info > div {
+    margin-bottom: 10px;
+}
+
+footer .info > div:not(:first-child){
+    display: flex;
+}
+
+footer .info > div:not(:first-child) dl:first-child dt {
+    padding-left: 0;
+}
+
+footer .info dl {
+    display: flex;
+    align-items: center;
+}
+
+footer .info dt {
+    padding: 0 5px 0 10px;
+}
+
+footer .info dd {
+    padding: 0 10px 0 5px;
+    border-right: 1px solid #fff;
+}
+
+footer .infoBtm {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,.3);
+    color: rgba(255,255,255,.6);
+}
+
+footer .infoBtm small {
+    font-size: 12px;
+}
+
+footer .infoBtm .sns {
+    display: flex;
+}
+
+footer .infoBtm .sns li {
+    margin-left: 8px;
+}
+
+footer .infoBtm .sns a {
+    font-size: 30px;
+}

@@ -1,0 +1,71 @@
+/* common.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+html, body {
+    font-size: 16px;
+    position: relative;
+    font-family: 'Noto Sans KR', AppleSDGothicNeo-Light, AppleGothic, Malgun Gothic,'맑은 고딕',sans-serif;
+    letter-spacing: -.03em;
+    color: #222;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.hide {
+    font-size: 0; 
+    line-height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    z-index: -999999em;
+}
+
+.comWebWidth {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.subWrap {
+    background-color: #eeecec;
+    padding: 100px 0;
+}
+
+.mainTitle {
+    line-height: 140px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    text-indent: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    html, body {
+        min-width: 1300px;
+    }
+}
