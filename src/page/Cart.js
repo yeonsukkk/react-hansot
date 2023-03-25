@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import ChkCart from '../component/ChkCart';
 import Event from '../component/Event'
 

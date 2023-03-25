@@ -1,6 +1,9 @@
 import { RiDeleteBin6Fill } from 'react-icons/ri';
+import { BsFillXSquareFill } from 'react-icons/bs';
+
 
 import { removeAll, removeCart } from '../api/api';
+import './CartItem.css'
 
 const CartItem = (props) => {
   let cartlist = JSON.parse(localStorage.getItem('cartlist'));
@@ -11,13 +14,12 @@ const CartItem = (props) => {
   }
   return(
     <>
-      <div>
+      <div className="removeAll">
         <button type="button" onClick={handlerDelete}><RiDeleteBin6Fill />전체삭제</button>
       </div>
-      <ul>
+      <ul className="cartlistItem">
         {
           cartlist?.map(item => {
-            console.log(item)
             return(
               <li key={item.id}>
                 <figure>
@@ -28,10 +30,10 @@ const CartItem = (props) => {
                     <dl>
                       <dt>{item.title}</dt>
                       <dd>{item.price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}원</dd>
-                      <dd>
-                          <button type="button" onClick={removeCart}><RiDeleteBin6Fill />삭제</button>
-                      </dd>
                     </dl>
+                    <p>
+                      <button type="button" className="removeItem" onClick={() => removeCart(item.id)}><BsFillXSquareFill /></button>
+                    </p>
                   </figcaption>
                 </figure>
               </li>
