@@ -29,15 +29,21 @@ function cartlistData(data){ // 로컬스토리지에 데이터 담기
   }
 }
 
-export function addCart(product){
+export function addCart(product){ // 로컬스토리지에 제품 담기
   cartlistData(product)
 
 }
 
-export function removeCart(product){
-  console.log(1)
+export function removeCart(id){ // 로컬스토리지에서 해당제품 삭제하기
+  const cartlist = JSON.parse(localStorage.getItem('cartlist'))
+  const result = cartlist?.filter(item => item.id !== id)
+  if(result.length === 0){
+    localStorage.removeItem('cartlist')
+    return false
+  }
+  localStorage.setItem('cartlist', JSON.stringify(result))
 }
 
-export function removeAll(){
+export function removeAll(){ // 로컬스토리지에서 모든 제품 삭제하기
   localStorage.removeItem('cartlist')
 }
