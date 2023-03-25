@@ -15,10 +15,10 @@ const Nav = () => {
                         <h2 className="hide">메인메뉴</h2>
                         <ul className="menuList">
                             <li><NavLink to="/menu" className={({isActive}) => isActive === true ? `active` : undefined }>메뉴소개</NavLink></li>
-                            <li><NavLink to="/myMenu">나만의메뉴</NavLink></li>
-                            <li><NavLink to="/hansotStore">가맹점찾기</NavLink></li>
-                            <li><NavLink to="/news">새로운소식</NavLink></li>
-                            <li><NavLink to="/cart">장바구니</NavLink></li>
+                            <li><NavLink onClick={e => e.preventDefault()} className={({isActive}) => isActive === true ? undefined : undefined }>나만의메뉴</NavLink></li>
+                            <li><NavLink to="/hansotStore" className={({isActive}) => isActive === true ? `active` : undefined }>가맹점찾기</NavLink></li>
+                            <li><NavLink to="/news" className={({isActive}) => isActive === true ? `active` : undefined }>새로운소식</NavLink></li>
+                            <li><NavLink to="/cart" className={({isActive}) => isActive === true ? `active` : undefined }>장바구니</NavLink></li>
                         </ul>
                         <div className="util">
                             <button type="button">로그인</button> / <button type="button">회원가입</button>
