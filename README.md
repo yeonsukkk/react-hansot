@@ -124,6 +124,7 @@ react-portfolio2_hansot
     <img src="https://ys-react-hansot.s3.ap-northeast-2.amazonaws.com/git/home.png" alt="홈 이미지" width="400" />
       - 데이터
         - 메인 비주얼 영역 & 뉴스 영역 -> react hook(useCallback(), useEffect(), useState())을 이용하여 데이터 가져옴
+
         ```bash
         <메인 비주얼 영역 json 파일 형식>
         [
@@ -146,6 +147,7 @@ react-portfolio2_hansot
           }
         ]
         ```
+
       - 레이아웃
         - 메인 비주얼 영역<br />
           - Swiper를 이용하여 슬라이드 구현
@@ -165,6 +167,7 @@ react-portfolio2_hansot
 
       - 데이터
         - Redux(createAsyncThunk(), useSelector(), ueseEffect(), useDispatch())를 이용하여 데이터 가져옴
+
         ```bash
         json 파일 형식
         [
@@ -181,6 +184,7 @@ react-portfolio2_hansot
           }
         ]
         ```
+        
         - 레이아웃
           - 필터(체크박스)
             - props를 이용하여 *MenuOption.js* 의 컴포넌트에서 checkbox onChange가 될 때 필터값의 조건에 따라 아이템(메뉴) 출력
