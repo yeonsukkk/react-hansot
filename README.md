@@ -33,10 +33,6 @@ react-portfolio2_hansot
 │     ├─ product.json
 │     └─ store.json
 └─ src
-   ├─ .redux
-   │  ├─ MainVisual.js
-   │  ├─ News.js
-   │  └─ store.js
    ├─ api
    │  └─ api.js
    ├─ assets
