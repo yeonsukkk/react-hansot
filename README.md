@@ -116,8 +116,7 @@ react-portfolio2_hansot
 <br />
 
 ### 💡기능설명
-  1. 홈
-  <br />
+  1. 홈<br />
     *pages>index.js*<br />
     *component : src>component>MainVisual.js, HansotPromise.js, Shortcut.js, Philosophy.js, MainNews.js*
     <br />
@@ -126,7 +125,6 @@ react-portfolio2_hansot
         - 메인 비주얼 영역 & 뉴스 영역 -> react hook(useCallback(), useEffect(), useState())을 이용하여 데이터 가져옴
 
         ```bash
-        
         <메인 비주얼 영역 json 파일 형식>
         [
           {
@@ -147,7 +145,6 @@ react-portfolio2_hansot
             "date": 1676505600000
           }
         ]
-
         ```
 
       - 레이아웃
