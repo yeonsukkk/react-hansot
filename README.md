@@ -126,6 +126,7 @@ react-portfolio2_hansot
         - 메인 비주얼 영역 & 뉴스 영역 -> react hook(useCallback(), useEffect(), useState())을 이용하여 데이터 가져옴
 
         ```bash
+        
         <메인 비주얼 영역 json 파일 형식>
         [
           {
@@ -146,6 +147,7 @@ react-portfolio2_hansot
             "date": 1676505600000
           }
         ]
+
         ```
 
       - 레이아웃
@@ -169,6 +171,7 @@ react-portfolio2_hansot
         - Redux(createAsyncThunk(), useSelector(), ueseEffect(), useDispatch())를 이용하여 데이터 가져옴
 
         ```bash
+
         json 파일 형식
         [
           {
@@ -183,8 +186,9 @@ react-portfolio2_hansot
             "kcal": 713.25
           }
         ]
+
         ```
-        
+
         - 레이아웃
           - 필터(체크박스)
             - props를 이용하여 *MenuOption.js* 의 컴포넌트에서 checkbox onChange가 될 때 필터값의 조건에 따라 아이템(메뉴) 출력
