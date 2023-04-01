@@ -157,8 +157,7 @@ react-portfolio2_hansot
     <br />
     <br />
 
-  2. 메뉴소개
-  <br/>
+  2. 메뉴소개<br/>
     *src>page>menu.js*<br />
     *component : src>component>MenuOption.js, MenuItem.js*
     <br />
@@ -168,7 +167,6 @@ react-portfolio2_hansot
         - Redux(createAsyncThunk(), useSelector(), ueseEffect(), useDispatch())를 이용하여 데이터 가져옴
 
         ```bash
-
         json 파일 형식
         [
           {
