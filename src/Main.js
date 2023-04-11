@@ -28,7 +28,6 @@ const Main = () => {
                             <Route path="/hansotStore" element={<HansotStore />} />
                             <Route path="/news">
                                 <Route index element={<News />} />
-                                <Route path=":newsSlug" element={<NewsDetail />} />
                             </Route>
                             <Route path="/myMenu" element={<MyMenu />} />
                             <Route path="*" element={<NotFound />} />
