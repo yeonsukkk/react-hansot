@@ -2,24 +2,25 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Event from '../component/Event';
 import HansotStoreOpt from '../component/HansotStoreOpt';
-import HansotStoreCnt from '../component/HansotStoreCnt';
-import './HansotStore.css';
+import HansotStoreCntKakao from '../component/HansotStoreCntKakao';
 
-const HansotStore = () => {
+const HansotStoreKakao = () => {
   const [store, setStore] = useState([]); // data담기
+  const [opt, setOpt] = useState('전체'); // select
+  const [map, setMap] = useState([]); // map 활성화된 위도, 경도 좌표값
+  const [mapTxt, setMapTxt] = useState(null); // map 지점명 표시
   useEffect(() => {
     // data가져오기
     const fetchData = async () => {
       const response = await axios.get('../json/store.json');
       setStore(response);
+      if (response.status === 200) {
+        setMap(response.data[0].list[0].mapKakao);
+        setMapTxt(response.data[0].list[0].title);
+      }
     };
     fetchData();
   }, []);
-
-  const [opt, setOpt] = useState('전체'); // select
-  const [map, setMap] = useState(
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.6359537339267!2d126.93770110000001!3d37.4693165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9fe8a0a1e2a5%3A0xccc97446c4ec08bd!2z7ZWc7Ial64-E7Iuc6529IOyLoOumvOqzoOyLnOy0jOygkA!5e0!3m2!1sko!2skr!4v1679641975919!5m2!1sko!2skr'
-  );
 
   //필터
   let filterItem = store.data?.filter((item) => {
@@ -39,11 +40,13 @@ const HansotStore = () => {
               />
             }
             {
-              <HansotStoreCnt
+              <HansotStoreCntKakao
                 data={filterItem}
                 opt={opt}
                 map={map}
                 setMap={setMap}
+                mapTxt={mapTxt}
+                setMapTxt={setMapTxt}
               />
             }
           </div>
@@ -54,4 +57,4 @@ const HansotStore = () => {
   );
 };
 
-export default HansotStore;
+export default HansotStoreKakao;
