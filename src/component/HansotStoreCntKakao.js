@@ -48,7 +48,7 @@ const HansotStoreCntKakao = (props) => {
     // 커스텀 오버레이에 표출될 내용
     const content =
       `<div class="kakaoCustomoverlay">` +
-      `  <a href="https://map.kakao.com/link/map/${props.map[0]},${props.map[1]}" target="_blank">` +
+      `  <a href="https://map.kakao.com/link/map/한솥도시락 ${props.mapTxt},${props.map[0]},${props.map[1]}" target="_blank">` +
       `    <span class="title">한솥도시락 ${props.mapTxt}</span>` +
       `  </a>` +
       `</div>`;
