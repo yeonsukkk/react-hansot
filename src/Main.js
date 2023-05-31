@@ -25,10 +25,10 @@ const Main = () => {
               <Route path=':menuSlug' element={<MenuDetail />} />
             </Route>
             <Route path='/cart' element={<Cart />} />
-            {/* google로 맵 가져오기 */}
-            <Route path='/hansotStore' element={<HansotStore />} />
             {/* kakao openAPI로 맵 가져오기 */}
-            <Route path='/hansotStore2' element={<HansotStoreKakao />} />
+            <Route path='/hansotStore' element={<HansotStoreKakao />} />
+            {/* google로 맵 가져오기 */}
+            <Route path='/hansotStore2' element={<HansotStore />} />
             <Route path='/news'>
               <Route index element={<News />} />
             </Route>
